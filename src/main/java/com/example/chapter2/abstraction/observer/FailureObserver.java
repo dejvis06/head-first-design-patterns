@@ -1,4 +1,4 @@
-package com.example.chapter2.abstraction;
+package com.example.chapter2.abstraction.observer;
 
 public interface FailureObserver {
 

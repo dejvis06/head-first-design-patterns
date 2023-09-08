@@ -1,6 +1,6 @@
 package com.example.chapter2;
 
-import com.example.chapter2.abstraction.Observer;
+import com.example.chapter2.abstraction.observer.Observer;
 import com.example.chapter2.abstraction.Subject;
 
 import java.util.ArrayList;
