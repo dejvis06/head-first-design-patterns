@@ -4,4 +4,5 @@ Code from book [Head First Design Patterns](https://www.oreilly.com/library/view
 
 Package structure according to chapters (also packages under the test directory):
 1. Intro to Design Patterns (strategy pattern)
+2. Observer Pattern
 
