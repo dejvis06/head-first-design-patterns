@@ -8,4 +8,5 @@ Package structure according to chapters (also packages under the test directory)
 3. Decorator Pattern
 4. Factory Pattern (skipped)
 5. Singleton Pattern (skipped)
+6. Command Pattern
 
