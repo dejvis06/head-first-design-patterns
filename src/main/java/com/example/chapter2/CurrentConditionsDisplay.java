@@ -13,14 +13,18 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update() {
-        this.temperature = weatherData.getTemperature();
-        this.humidity = weatherData.getHumidity();
-        display();
-    }
-
     public void display() {
         System.out.println("Current conditions: " + temperature
                 + "F degrees and " + humidity + "% humidity");
+    }
+
+    public void onFailure() {
+        System.err.println("Current conditions: Unreadable data");
+    }
+
+    public void onSuccess() {
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
+        display();
     }
 }

@@ -11,10 +11,9 @@ class ApplicationTests {
     void contextLoads() {
         WeatherData weatherData = new WeatherData();
 
-        CurrentConditionsDisplay currentConditionsDisplay =
-                new CurrentConditionsDisplay(weatherData);
-        ForecastDisplay forecastDisplay =
-                new ForecastDisplay(weatherData);
+        new CurrentConditionsDisplay(weatherData);
+        new ForecastDisplay(weatherData);
         weatherData.setMeasurements(80, 65, 30.4f);
+        weatherData.simulateUnreadableException();
     }
 }

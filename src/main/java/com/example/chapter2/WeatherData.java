@@ -27,19 +27,32 @@ public class WeatherData implements Subject {
 
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update();
+            observer.onSuccess();
         }
     }
 
-    public void measurementsChanged() {
-        notifyObservers();
+    public void notifyFailureObservers() {
+        for (Observer observer : observers) {
+            observer.onFailure();
+        }
+    }
+
+    public void measurementsChanged(boolean readable) {
+        if (readable)
+            notifyObservers();
+        else
+            notifyFailureObservers();
     }
 
     public void setMeasurements(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        measurementsChanged();
+        measurementsChanged(true);
+    }
+
+    public void simulateUnreadableException(){
+        measurementsChanged(false);
     }
 
     public float getTemperature() {

@@ -1,6 +1,4 @@
 package com.example.chapter2.abstraction;
 
-public interface Observer {
-
-    void update();
+public interface Observer extends SuccessObserver, FailureObserver {
 }

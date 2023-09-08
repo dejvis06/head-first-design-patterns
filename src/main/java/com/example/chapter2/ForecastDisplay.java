@@ -13,13 +13,17 @@ public class ForecastDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update() {
+    public void display() {
+        System.out.println("Forecast: Watch out for cooler, rainy weather");
+    }
+
+    public void onFailure() {
+        System.err.println("Forecast: Unreadable data");
+    }
+
+    public void onSuccess() {
         this.temperature = weatherData.getTemperature();
         this.humidity = weatherData.getHumidity();
         display();
-    }
-
-    public void display() {
-        System.out.println("Forecast: Watch out for cooler, rainy weather");
     }
 }
