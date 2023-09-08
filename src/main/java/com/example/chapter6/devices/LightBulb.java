@@ -2,7 +2,7 @@ package com.example.chapter6.devices;
 
 import com.example.chapter6.abstraction.functions.PowerSwitch;
 
-public class Light implements PowerSwitch {
+public class LightBulb implements PowerSwitch {
     @Override
     public void on() {
         System.out.println("Light is on!");
