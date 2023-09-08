@@ -11,4 +11,5 @@ Package structure according to chapters (also packages under the test directory)
 6. Command Pattern
 7. Adapter & Fasade Patterns (skipped)
 8. Template Pattern (skipped)
+9. Iterator pattern (skipped)
 
