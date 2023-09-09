@@ -13,4 +13,5 @@ Package structure according to chapters (also packages under the test directory)
 8. Template Pattern (skipped)
 9. Iterator Pattern (skipped)
 10. State Pattern
+11. Proxy Pattern (skipped)
 
