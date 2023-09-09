@@ -1,4 +1,4 @@
-package com.example.chapter3;
+package com.example;
 
 
 import com.example.chapter3.abstraction.Beverage;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class Chapter3 {
 
     @Test
     void contextLoads() {

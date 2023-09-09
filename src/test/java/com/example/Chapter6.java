@@ -1,6 +1,7 @@
-package com.example.chapter6;
+package com.example;
 
 
+import com.example.chapter6.RemoteControl;
 import com.example.chapter6.abstraction.functions.PowerSwitch;
 import com.example.chapter6.commands.PowerOffCommand;
 import com.example.chapter6.commands.PowerOnCommand;
@@ -9,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class Chapter6 {
 
     @Test
     void contextLoads() {

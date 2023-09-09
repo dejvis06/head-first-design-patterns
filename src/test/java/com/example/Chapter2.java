@@ -1,11 +1,14 @@
-package com.example.chapter2;
+package com.example;
 
 
+import com.example.chapter2.CurrentConditionsDisplay;
+import com.example.chapter2.ForecastDisplay;
+import com.example.chapter2.WeatherData;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class Chapter2 {
 
     @Test
     void contextLoads() {
