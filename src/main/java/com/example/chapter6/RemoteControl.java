@@ -13,4 +13,8 @@ public class RemoteControl {
     public void runCommand() {
         command.execute();
     }
+
+    public void undoCommand() {
+        command.undo();
+    }
 }

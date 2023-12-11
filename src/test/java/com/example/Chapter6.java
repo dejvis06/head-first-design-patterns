@@ -2,7 +2,7 @@ package com.example;
 
 
 import com.example.chapter6.RemoteControl;
-import com.example.chapter6.abstraction.functions.PowerSwitch;
+import com.example.chapter6.devices.types.PowerSwitch;
 import com.example.chapter6.commands.PowerOffCommand;
 import com.example.chapter6.commands.PowerOnCommand;
 import com.example.chapter6.devices.LightBulb;
@@ -20,12 +20,13 @@ class Chapter6 {
         // Type of operation:
         PowerSwitch powerSwitch = new LightBulb();
 
-        PowerOnCommand powerOnCommand = new PowerOnCommand(powerSwitch);
+        PowerOnCommand powerOnCommand = new PowerOnCommand(new LightBulb());
         remoteControl.setCommand(powerOnCommand);
         remoteControl.runCommand();
 
         PowerOffCommand powerOffCommand = new PowerOffCommand(powerSwitch);
         remoteControl.setCommand(powerOffCommand);
         remoteControl.runCommand();
+        remoteControl.undoCommand();
     }
 }
